@@ -1,0 +1,17 @@
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  height: 17.4rem;
+  width: 45.7rem;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 890px) {
+  .card {
+    flex-direction: column;
+    height: 31.6rem;
+    width: 20.5rem;
+    overflow: hidden;
+  }
+}

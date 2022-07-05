@@ -1,0 +1,195 @@
+.left {
+  width: 39%;
+  overflow: hidden;
+}
+
+.left img {
+  width: 125%;
+}
+
+.right {
+  padding: 1rem 2.4rem;
+  width: 61%;
+}
+
+h1 {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+p {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 2.8rem;
+}
+
+.nameGroup {
+  margin-left: 1rem;
+}
+
+.author .name {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.author .date {
+  color: hsl(212, 23%, 69%);
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+.socialMedia button {
+  all: unset;
+  background: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.socialMedia button:hover {
+  background: hsl(217, 19%, 35%);
+  color: #fff;
+}
+
+.socialMedia button:hover .arrow path {
+  color: #fff;
+  fill: #fff;
+}
+
+.toolTip {
+  background: hsl(217, 19%, 35%);
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.1rem;
+  position: absolute;
+  bottom: 95px;
+  right: -70px;
+}
+
+.toolTip::after {
+  position: absolute;
+  content: "";
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid hsl(217, 19%, 35%);
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toolTip__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolTip__text {
+  color: hsl(212, 23%, 69%);
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  margin-right: 1.2rem;
+}
+
+.toolTip img {
+  height: 1.2rem;
+  width: 1.2rem;
+  vertical-align: middle;
+}
+
+.toolTip a:nth-of-type(1),
+.toolTip a:nth-of-type(2) {
+  margin-right: 1.2rem;
+}
+
+.toolTip button {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .left {
+    height: 38.5%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .left img {
+    object-position: 0px -20px;
+    width: 100%;
+  }
+  .right {
+    padding: 1.7rem 2.1rem;
+    height: 61.5%;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    width: 97%;
+  }
+
+  .footer {
+    margin-top: 2.1rem;
+  }
+
+  .toolTip {
+    bottom: 0px;
+    border-top-left-radius: 0 0;
+    border-top-right-radius: 0 0;
+    box-shadow: none;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 4rem;
+  }
+
+  .toolTip::after {
+    display: none;
+  }
+
+  .toolTip button {
+    all: unset;
+    background: hsl(214, 17%, 51%);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.12rem;
+    text-align: center;
+  }
+
+  .toolTip .arrow {
+    background: hsl(214, 17%, 51%);
+  }
+
+  .toolTip .arrow path {
+    fill: #fff;
+  }
+}
